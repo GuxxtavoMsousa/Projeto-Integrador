@@ -1,22 +1,62 @@
-<doctype>
+<doctype html>
 <html>
 <head>
 
 <meta charset="utf-8">
 
 <title> Projeto Integrador </title>
+<link href="estilo.css" rel="stylesheet">
 
 </head>
 
 <body>
-  
-    <header id="topo">
-        <input type="image" src="login.jpg" width="50px" height="50px"name="login" value="Login">
-        <input type="text"  width="50px" height="50px" name="busca" value="busca">
-      
-  </header>
 
-    <main></main>
+    <header id="topo">
+        <input type="image" class="login" src="login.jpg" name="login" value="Login">
+        <input type="search"  class="botao" placeholder="Buscar" name="busca" value="">
+
+        <img src="logo.jpg" alt="Logo da Hamburgueria">
+    </header>
+
+    <main id="conteudo">
+        <ul>
+            <li id="teste"> 
+            <a target="_blank" rel="noopener noreferrer" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                <div>
+                    <img src="especial.jfif" width="300px" height="200px" alt="Hamburguer especial">
+                </div>
+
+                <div>
+                    <span>Hamburguer Especial</span>
+                    <div>
+                        <span>
+                            R$ 
+                            20,00
+                        </span>
+                    </div>
+                </div>
+            </a>
+            </li>
+
+            <li id="teste">
+                <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                    <div>
+                        <img src="x-burgue.jfif" width="300px" height="200px" alt="x-burguer">
+                    </div>
+    
+                    <div>
+                        <span>X-Burguer</span>
+                        <div>
+                            <span>
+                                R$ 20,00
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                </li>
+        </ul>
+
+    </main>
 
     <footer></footer>
 
