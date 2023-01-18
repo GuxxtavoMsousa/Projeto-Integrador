@@ -1,26 +1,48 @@
 @charset "utf-8";
-
-#topo input {
-    margin: 5px;
-    float: right;
-    border-radius: 2%;
-    clear: both;
-    overflow: hidden;
+body{
+    text-align: center;
 }
+
+.login {
+    float: left;
+    clear: both;
+    width: 5%;
+    height: 50px;
+    margin: 5px;
+   }
+
+.botao{
+    width: 25%;
+    height: 50px;
+    margin: 5px;
+}
+
+
 
 #topo{
     width: 100%;
     height: 200px;
-    background-color: aquamarine;
+    background-color: black;
     border-radius: 2%;
+    display: flex;
     overflow: hidden;
-    clear: both;
-
-    
+    box-sizing: border-box;
+    padding: 1%;
 }
 
-.teste{
-    margin: 0;
-    font-size: 150%;
-    float: right;
+#topo img{
+    margin-left: 10%;
 }
+
+
+#conteudo{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#teste{
+    float: left;
+    margin: 5px;
+}
+
