@@ -45,11 +45,18 @@ body{
     height: 150px;
 }
 
+main img{
+    box-sizing: border-box;
+    border-radius: 2%;
+    
+}   
+
 
 #conteudo{
     width: 100%;
     height: auto;
     display: flex;
+    box-sizing: border-box;
  
 
 }
