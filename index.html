@@ -7,30 +7,58 @@
 <title> Projeto Integrador </title>
 <link href="estilo.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<!--<meta http-equiv="refresh" content="3"> -->
-
+<!--<meta http-equiv="refresh" content="3">--> 
 </head>
 
 <body>
 
     <header id="topo">
-<div>
-    <div>
-   <!--     <img src="login.jpg" style="width: 50%; height: 50px;"> -->
-         <a href="tela_login.php" style="float:left;"> Entra ou Cadastre-se </a>
-    </div>
-</div>
-    
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-            <input style="width: 20%;" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Procure">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-              <img src="logo.jpg" alt="Logo da Hamburgueria">
-            </div>
+        <div class="cadastra">
+            <button class="preto">
+            <img src="login.jpg">
+            <a href="tela_login.php"> Entra ou Cadastre-se </a>
+            </button>
+        </div>
+        
 
-    
+        <div class="botao" class="container-fluid">
+            
+            <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Procure">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+
        
+
+        </div>
+
+        <nav class="navegar">
+            <a href="#topo">Home</a>
+            <a href="#conteudo">Lanches</a>
+            <a href="#rodape">Contato</a>
+        </nav>
+
+        <div class="carrinho" role="button">
+            
+            <button type="button" class="btn btn-primary">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <a href="carrinho.php" target="_blank">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </a>
+                  </svg>
+              
+                </button>
+            
+            </div>
+            
+        <div class="flutua">
+        <img src="Logo Hambúrguer Preto e Branco Retro.png">
+    </div>
+
+
+     
+
     </header>
 
     <main id="conteudo">
@@ -78,7 +106,7 @@
                         </div>
         
                         <div>
-                            <span style="text-align: center; justify-content:center;display: flex; font-family: Verdana, Geneva, Tahoma, sans-serif;">X-Burguer</span>
+                            <span style="text-align:center; justify-content:center; display:flex; font-family: Verdana, Geneva, Tahoma, sans-serif;">X-Burguer</span>
                             <div>
                                 <span style="text-align: center; justify-content:center;display: flex;">
                                     R$ 20,00
