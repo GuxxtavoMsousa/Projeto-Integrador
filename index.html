@@ -1,134 +1,320 @@
-<doctype>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-<meta charset="utf-8">
-
-<title> Projeto Integrador </title>
-<link href="estilo.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<!--<meta http-equiv="refresh" content="3">--> 
+    <title>Samuca'S Burguer</title>
 </head>
-
 <body>
-
+    
     <header id="topo">
-             <div class="flutua">
-                     <img src="Logo Hambúrguer Preto e Branco Retro.png">
-              </div>
+        <div class="flutua">
+                <img src="../imagens/LogoS.png">
+         </div>
 
-        <div class="botao" class="container-fluid">
-            
-            <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Procure">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+   <div class="botao" class="container-fluid">
+       
+       <form class="d-flex" role="search">
+     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Procure">
+         <button class="btn btn-outline-success" type="submit">Buscar</button>
+       </form>
 
+  
+
+   </div>
+
+   <nav class="navegar">
+       <a href="#topo">Home</a>
+       <a href="#conteudo">Lanches</a>
+       <a href="#rodape">Contato</a>
+   </nav>
+
+   <div class="carrinho" role="button">
+       
+       <button type="button" class="btn btn-primary">
+           
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+               <a href="carrinho.php" target="_blank">
+               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+           </a>
+             </svg>
+         
+           </button>
+       
+       </div>
        
 
-        </div>
 
-        <nav class="navegar">
-            <a href="#topo">Home</a>
-            <a href="#conteudo">Lanches</a>
-            <a href="#rodape">Contato</a>
-        </nav>
 
-        <div class="carrinho" role="button">
-            
-            <button type="button" class="btn btn-primary">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                    <a href="carrinho.php" target="_blank">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </a>
-                  </svg>
-              
-                </button>
-            
+            <div class="cadastra">
+                     <button class="preto">
+                       <img src="../imagens/login.jpg">
+                         <a href="tela_login.php"> Entra ou Cadastre-se </a>
+                      </button>
+             </div>
+</header>
+
+<main>
+    <div id="conteudo">
+    <ul style="list-style-type: none;">
+        <p class="texto1">Lanches Tradicionais</p>
+        <li id="teste"> 
+        <a target="_blank" rel="noopener noreferrer" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+            <div>
+                <img src="../imagens/especial.jfif" width="300px" height="200px" alt="Hamburguer especial">
             </div>
-            
-   
 
+            <div>
+                
+                <div class="texto-conteudo"> 
+                    <span>X-Burguer</span>
+                    <span style="text-align: center; justify-content:center;display: flex;">
+                        R$ 
+                        11,00
+                    </span>
+                </div>
+            </div>
+        </a>
+        </li>
 
-                 <div class="cadastra">
-                          <button class="preto">
-                            <img src="login.jpg">
-                              <a href="tela_login.php"> Entra ou Cadastre-se </a>
-                           </button>
-                  </div>
-
-    </header>
-
-    <main id="conteudo">
-        <ul style="list-style-type: none;">
-            <li id="teste"> 
-            <a target="_blank" rel="noopener noreferrer" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+        <li id="teste">
+            <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
                 <div>
-                    <img src="especial.jfif" width="300px" height="200px" alt="Hamburguer especial">
+                    <img src="../imagens/x-burgue.jfif" width="300px" height="200px" alt="x-burguer">
                 </div>
 
                 <div>
-                    <span style="text-align: center; justify-content:center;display: flex; font-family: Verdana, Geneva, Tahoma, sans-serif;">Hamburguer Especial</span>
-                    <div>
+                    
+                    <div class="texto-conteudo">
+                        <span> X-Bacon</span>
                         <span style="text-align: center; justify-content:center;display: flex;">
-                            R$ 
-                            20,00
+                            R$ 11,00
                         </span>
                     </div>
                 </div>
             </a>
             </li>
 
+        
             <li id="teste">
                 <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
                     <div>
-                        <img src="x-burgue.jfif" width="300px" height="200px" alt="x-burguer">
+                        <img src="../imagens/x-burgue.jfif" width="300px" height="200px" alt="x-burguer">
                     </div>
     
                     <div>
-                        <span style="text-align: center; justify-content:center;display: flex; font-family: Verdana, Geneva, Tahoma, sans-serif;"> X-Burguer</span>
-                        <div>
+                        
+                        <div class="texto-conteudo">
+                            <span>X-Salada</span>
                             <span style="text-align: center; justify-content:center;display: flex;">
-                                R$ 20,00
+                                R$ 11,00
                             </span>
                         </div>
                     </div>
                 </a>
-                </li>
+            </li>
 
             
-                <li id="teste">
-                    <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
-                        <div>
-                            <img src="x-burgue.jfif" width="300px" height="200px" alt="x-burguer">
+            <li id="teste">
+                <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                    <div>
+                        <img src="../imagens/x-burgue.jfif" width="300px" height="200px" alt="x-burguer">
+                    </div>
+    
+                    <div>
+                        
+                        <div class="texto-conteudo">
+                            <span>X-Calabresa</span>
+                            <span style="text-align: center; justify-content:center;display: flex;">
+                                R$ 11,00
+                            </span>
                         </div>
+                    </div>
+                </a>
+            </li>
+    </ul>
+</div>
+
+<div class="topico2">
+    <ul style="list-style-type: none;">
+      
+        <p class="texto1">Lanches Artesanais</p>
+      
+        <li id="teste1"> 
+        <a target="_blank" rel="noopener noreferrer" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+            <div>
+                <img src="../imagens/especial.jfif" width="300px" height="200px" alt="Hamburguer especial">
+            </div>
+
+            <div>
+                
+                <div class="texto-conteudo"> 
+                    <span>Hamburguer Especial</span>
+                    <span style="text-align: center; justify-content:center;display: flex;">
+                        R$ 
+                        25,00
+                    </span>
+                </div>
+            </div>
+        </a>
+        </li>
+
+        <li id="teste1">
+            <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                <div>
+                    <img src="../imagens/hamburgue1.jpg" width="300px" height="200px" alt="x-burguer">
+                </div>
+
+                <div>
+                    
+                    <div class="texto-conteudo">
+                        <span> X-Burguer</span>
+                        <span style="text-align: center; justify-content:center;display: flex;">
+                            R$ 30,00
+                        </span>
+                    </div>
+                </div>
+            </a>
+            </li>
+
         
-                        <div>
-                            <span style="text-align:center; justify-content:center; display:flex; font-family: Verdana, Geneva, Tahoma, sans-serif;">X-Burguer</span>
-                            <div>
-                                <span style="text-align: center; justify-content:center;display: flex;">
-                                    R$ 20,00
-                                </span>
-                            </div>
+            <li id="teste1">
+                <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                    <div>
+                        <img src="../imagens/hamburgue2.jfif" width="300px" height="200px" alt="x-burguer">
+                    </div>
+    
+                    <div>
+                        
+                        <div class="texto-conteudo">
+                            <span>X-Burguer</span>
+                            <span style="text-align: center; justify-content:center;display: flex;">
+                                R$ 35,00
+                            </span>
                         </div>
-                    </a>
-                    </li>
-        </ul>
-    </main>
+                    </div>
+                </a>
+            </li>
 
-    <footer id="rodape">
-        <div class="rodape"> 
-            <p> Email: gustavo@gmail.com </p>
             
-            <p> Contato: 999-99-99-88 </p>
-            
-            <p> Copyright @2023 </p>
-            
-            <p> CPNJ: 00,000,000/0000-00 </p>
-        </div>
-    </footer>
+            <li id="teste1">
+                <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                    <div>
+                        <img src="../imagens/hamburgue3.jpg" width="300px" height="200px" alt="x-burguer">
+                    </div>
+    
+                    <div>
+                        
+                        <div class="texto-conteudo">
+                            <span>X-Burguer</span>
+                            <span style="text-align: center; justify-content:center;display: flex;">
+                                R$ 40,00
+                            </span>
+                        </div>
+                    </div>
+                </a> 
+            </li>
+    </ul>
+</div>  
 
+<div class="topico2">
+    <ul style="list-style-type: none;">
+      
+        <p class="texto1">Bebidas</p>
+      
+        <li id="teste1"> 
+        <a target="_blank" rel="noopener noreferrer" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+            <div>
+                <img src="../imagens/bebida1.jpg" width="300px" height="200px" alt="Hamburguer especial">
+            </div>
+
+            <div>
+                
+                <div class="texto-conteudo"> 
+                    <span>Pepsi</span>
+                    <span style="text-align: center; justify-content:center;display: flex;">
+                        R$ 
+                        6,00
+                    </span>
+                </div>
+            </div>
+        </a>
+        </li>
+
+        <li id="teste1">
+            <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                <div>
+                    <img src="../imagens/bebida2.jpg" width="300px" height="200px" alt="x-burguer">
+                </div>
+
+                <div>
+                    
+                    <div class="texto-conteudo">
+                        <span>Fanta</span>
+                        <span style="text-align: center; justify-content:center;display: flex;">
+                            R$ 6,00
+                        </span>
+                    </div>
+                </div>
+            </a>
+            </li>
+
+        
+            <li id="teste1">
+                <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                    <div>
+                        <img src="../imagens/bebida3.jpg" width="300px" height="200px" alt="x-burguer">
+                    </div>
+    
+                    <div>
+                        
+                        <div class="texto-conteudo">
+                            <span>Coca-Cola</span>
+                            <span style="text-align: center; justify-content:center;display: flex;">
+                                R$ 6,00
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            
+            <li id="teste1">
+                <a target="_blank" rel="" href="https://www.theburgerstore.com.br/produtos/kit-hamburgada-completao/">
+                    <div>
+                        <img src="../imagens/bebida4.jpg" width="300px" height="200px" alt="x-burguer">
+                    </div>
+    
+                    <div>
+                        
+                        <div class="texto-conteudo">
+                            <span>Sprite</span>
+                            <span style="text-align: center; justify-content:center;display: flex;">
+                                R$ 6,00
+                            </span>
+                        </div>
+                    </div>
+                </a> 
+            </li>
+    </ul>
+</div>  
+</main>
+
+
+<footer id="rodape">
+    <div class="rodape"> 
+        <p> Email: gustavo@gmail.com </p>
+        
+        <p> Contato: 999-99-99-88 </p>
+        
+        <p> Copyright @2023 </p>
+        
+        <p> CPNJ: 00,000,000/0000-00 </p>
+    </div>
+</footer>
 </body>
-
 </html>
